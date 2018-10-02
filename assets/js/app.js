@@ -38,7 +38,7 @@ $('#send_button').click(function (ev) {
             message: $('#message').val()
         };
         console.log(data);
-        $.post('http://localhost:3000/message', data, function (err, info) {
+        $.post('http://159.203.35.145:8000/message', data, function (err, info) {
            alert('message sended');
            console.log(err);
            console.log(info);
