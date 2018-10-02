@@ -38,10 +38,13 @@ $('#send_button').click(function (ev) {
             message: $('#message').val()
         };
         console.log(data);
-        $.post('http://159.203.35.145:8000/message', data, function (err, info) {
-           alert('message sended');
-           console.log(err);
-           console.log(info);
+        $.post('http://localhost:3000/message', data, function (data, status) {
+           if(status === 'success') {
+               $('#confirmModal').modal();
+           }
+           else {
+               console.log('Error on post request!!!');
+           }
         });
     }
 });
