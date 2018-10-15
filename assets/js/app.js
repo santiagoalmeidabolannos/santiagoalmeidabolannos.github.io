@@ -37,7 +37,8 @@ $('#send_button').click(function (ev) {
             email: $('#email').val(),
             message: $('#message').val()
         };
-        console.log(data);
+        // i am working on my digital ocean droplet
+        alert('I am working on my Digital Ocean droplet, please contact me using my email address.')
         $.post('http://localhost:3000/message', data, function (data, status) {
            if(status === 'success') {
                $('#confirmModal').modal();
