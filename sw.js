@@ -29,7 +29,7 @@ var filesToCache = [
     '/assets/js/navbar-fixed.js',
     '/assets/js/popper.js',
     '/assets/js/wow.min.js',
-    '/assets/img/profile_square.jpg'
+    '/assets/img/profile_lite.jpg'
 ];
 
 self.addEventListener('install', function (e) {
